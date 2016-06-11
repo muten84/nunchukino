@@ -174,48 +174,48 @@ void loop() {
     //right
     //move right
     if (jX > 0 && fR == 0) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=4&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=4&onestep=0");
       fR = 1;
     }
     //stop right
     else if (jX == 0 && fR == 1) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=7&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=7&onestep=0");
       fR = 0;
     }
 
     //left
     //move left
     if (jX < 0 && fL ==0) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=6&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=6&onestep=0");
       fL = 1;
     }
     //stop left
     else if (jX == 0 && fL == 1) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=5&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=5&onestep=0");
       fL = 0;
     }
 
     //up
     //move up
     if (jY > 0 && fU == 0) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=0&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=0&onestep=0");
       fU = 1;
     }
     //stop up
     else if (jY == 0 && fU == 1) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=3&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=3&onestep=0");
       fU = 0;
     }
 
     //down
     //move down
     if (jY < 0 && fD == 0) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=2&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=2&onestep=0");
       fD = 1;
     }
     //stop down
     else if (jY == 0 && fD == 1) {
-      httpGet("http://"+user+":"+pwd+"@10.0.0.4/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=1&onestep=0");
+      httpGet("http://"+user+":"+pwd+"@ipcam/decoder_control.cgi?loginuse="+user+"&loginpas="+pwd+"&command=1&onestep=0");
       fD = 0;
     }
 
